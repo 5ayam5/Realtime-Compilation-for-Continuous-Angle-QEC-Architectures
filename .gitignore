@@ -1,0 +1,7 @@
+.vscode/
+**/*.o
+sim
+.DS_Store
+config/*
+!config/*.cfg
+outputs
