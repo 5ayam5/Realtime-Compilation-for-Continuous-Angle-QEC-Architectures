@@ -2,6 +2,27 @@
 
 Simulator for the paper "RESCQ: Realtime Scheduling for Continuous Angle Quantum Error Correction Architectures".
 
+If you find it useful, please consider citing our work as:
+```bibtex
+@inproceedings{10.1145/3676641.3716018,
+author = {Sethi, Sayam and Baker, Jonathan Mark},
+title = {RESCQ: Realtime Scheduling for Continuous Angle Quantum Error Correction Architectures},
+year = {2025},
+isbn = {9798400710797},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3676641.3716018},
+doi = {10.1145/3676641.3716018},
+abstract = {In order to realize large scale quantum error correction (QEC), resource states, such as |T〉, must be prepared which is expensive in both space and time. In order to circumvent this problem, alternatives have been proposed, such as the production of continuous angle rotation states [1, 6, 34]. However, the production of these states is non-deterministic and may require multiple repetitions to succeed. The original proposals suggest architectures which do not account for realtime (or dynamic) management of resources to minimize total execution time. Without a realtime scheduler, a statically generated schedule will be unnecessarily expensive. We propose RESCQ (pronounced rescue), a realtime scheduler for programs compiled onto these continuous angle systems. Our scheme actively minimizes total cycle count by on-demand redistribution of resources based on expected production rates. Depending on the underlying hardware, this can cause excessive classical control overhead. We further address this by dynamically selecting the frequency of our recomputation. RESCQ improves over baseline proposals by an average of 2x in cycle count.},
+booktitle = {Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+pages = {1028–1043},
+numpages = {16},
+keywords = {quantum computing, quantum error correction, realtime scheduling, surface codes},
+location = {Rotterdam, Netherlands},
+series = {ASPLOS '25}
+}
+```
+
 ## Requirements
 The compilation uses [cmake](https://cmake.org). The [Boost](https://www.boost.org) library is also required for compiling the simulator. You can install it with the following command for Debian-based systems:
 ```bash
